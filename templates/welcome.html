@@ -1,0 +1,54 @@
+{{template "base" .}} {{define "content"}}
+<table role="presentation" class="main">
+  <!-- START MAIN CONTENT AREA -->
+  <tr>
+    <td class="wrapper">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <p>Welcome, {{ .FirstName}},</p>
+            <p>Please use this credential to login</p>
+            <p>Username: {{ .Email}} or {{ .CitizenID}}</p>
+            <p>Password: {{ .Password}}</p>
+            <table
+              role="presentation"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class="btn btn-primary"
+            >
+              <tbody>
+                <tr>
+                  <td align="left">
+                    <table
+                      role="presentation"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a href="{{.URL}}" target="_blank"
+                              >Home Page</a
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Best Regards,</p>
+            <p>Admin Team</p>
+            <p>Computer Science and Information, Khon Kaen University Nong Khai Campus</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- END MAIN CONTENT AREA -->
+</table>
+{{end}}
